@@ -66,6 +66,12 @@ a{
     background-color: white;
     border-radius: 1rem;
 }
+
+.op{
+    color: red;
+    font-weight: bolder;
+}
+
 .descript{
     padding: 1rem;
     margin: 1rem;
@@ -73,3 +79,42 @@ a{
 
 /* Facts */
 
+.heading, .subheading{
+    color: white;
+}
+
+.card{
+    background-color: white;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 0.6rem 0 0.6rem 0;
+}
+
+
+button{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    color: #FFFFFF;
+    font-family: 'Aclonica', sans-serif;
+    font-size: large;
+    font-weight: 100;
+    padding: 1rem;
+    background-color: #000000;
+    margin: 1rem;
+    border: solid #ffffff 1px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+ }
+ 
+ button:hover {
+    background: #F5F5F5;
+    border: solid #000000 1px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color:black;
+ }
