@@ -1,6 +1,6 @@
 const answers = document.querySelector(".answer-key");
 const btn_submit = document.querySelector(".btn-submit");
-const outputHere = document.querySelector(".outputHere");
+const outputHereGib = document.querySelector(".outputHereGib");
 
 const real_answer_key = ["Scalene",
     "Hypotenuse",
@@ -9,16 +9,18 @@ const real_answer_key = ["Scalene",
     "1/2 * height * base"
 ]
 
-var score = 0;
+
 btn_submit.addEventListener("click", function clickEventHandler() {
+    outputHereGib.innerText = ("");
     const results = new FormData(answers);
     var i = 0;
+    var score = 0;
     for (let value of results.values()) {
         if (value === real_answer_key[i]) {
             score++;
         }
         i++;
-        console.log(i);
+        console.log(score);
     }
-    outputHere.innerText = ("Your score is :" + score);
+    outputHereGib.innerText = ("Your score is : " + score);
 })

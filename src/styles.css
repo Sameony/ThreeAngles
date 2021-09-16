@@ -132,3 +132,18 @@ button{
  .facx-btn:hover{
      color: black;
  }
+
+ /* Quiz */
+ 
+ .quiz-container{
+     color: white;
+     padding: 1rem;
+     border: #FFFFFF 1px solid;
+     margin: 1rem;
+     /* background-color: black; */
+     
+ }
+ .outputHereGib{
+    color: red;
+    font-weight: bolder;
+ }
