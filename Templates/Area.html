@@ -10,6 +10,7 @@
 </head>
 
 <body>
+    <h1 class="BigHeader">Fun With Triangles!</h1>
     <nav class="ourNav">
 
         <div class="splitscreen">
@@ -20,7 +21,7 @@
             <div class="right">
                 <a class="navItem" href="/index.html"> Facts!</a>
                 <a class="navItem" href="/Templates/quiz.html">Quiz!</a>
-                <a class="navItem" href="/Templates/Area.html">Area!</a>
+                <a class="navItem link-active" href="/Templates/Area.html">Area!</a>
             </div>
         </div>
 
@@ -33,46 +34,49 @@
         Did You know that depending upon the type of a triangle,
         you can find the area with a different specific formula?
     </div>
-    <h2>Equilateral Triangle</h2>
-    <input class="side-equi" placeholder="Enter a side:" />
-    <button class="btn-equi">Calculate</button>
-    <div class="output-equi"></div>
-    <div class="descript">Area of Equilateral Triangle can be calculated
-        with the formula (√3)/4 × side<sup>2</sup>
-    </div>
+    <section class="leftShift">
+        <h2>Equilateral Triangle</h2>
+        <input class="side-equi" placeholder="Enter a side:" /><br />
+        <button class="btn-equi">Calculate</button>
+        <div class="output-equi"></div>
+        <div class="descript">Area of Equilateral Triangle can be calculated
+            with the formula (√3)/4 × side<sup>2</sup>
+        </div>
+    </section>
+    <section class="rightShift">
+        <h2>Isoceles Traingle</h2>
+        <input id="side-iso" type="text" placeholder="Enter a side:"> <br />
+        <input id="base-iso" type="text" placeholder="Enter length of base:"><br/>
+        <button class="btn-iso">Calculate</button>
+        <div class="output-iso"></div>
 
+        <div class="descript">When an equal side and the base is given.
+            Area of an isosceles triangle is given by:<br />
+            1/4 × base√<span style="text-decoration: overline">4side<sup>2</sup>-base<sup>2</sup></span>
 
-    <h2>Isoceles Traingle</h2>
-    <input id="side-iso" type="text" placeholder="Enter a side:">
-    <input id="base-iso" type="text" placeholder="Enter length of base:">
-    <button class="btn-iso">Calculate</button>
-    <div class="output-iso"></div>
-
-    <div class="descript">When an equal side and the base is given.
-        Area of an isosceles triangle =
-        1/4 × b√<span style="text-decoration: overline">4a<sup>2</sup>-b<sup>2</sup></span>
-
-        where 'b' is the base and 'a' is the measure of equal side.</div>
-
+        </div>
+    </section>
     <div class="Babble">
         Also, In case you don't know what kind of triangle it is,
         and you do not have the height of the triangle either,
         We can find the area with the help of sides only!
     </div>
-    <h2>Heron's Formula</h2>
-    <input type="text" class="heron-1" placeholder="Enter first side">
-    <input type="text" class="heron-2" placeholder="Enter second side">
-    <input type="text" class="heron-3" placeholder="Enter last side">
-    <button class="btn-heron">Calculate</button>
-    <div class="output-heron"></div>
-    <div class="descript">When the sides of a triangle are given as a, b, and c.
-        (Heron's formula)
-
-        Area of a scalene triangle =
-        √<span style="text-decoration: overline">s(s− a)(s-b)(s-c)</span>
-        where a, b, and c are the sides and 's' is the semi-perimeter;
-        s = (a + b + c)/2
-    </div>
+    <section class="leftShift">
+        <h2>Heron's Formula</h2>
+        <input type="text" class="heron-1" placeholder="Enter first side"> <br />
+        <input type="text" class="heron-2" placeholder="Enter second side"> <br />
+        <input type="text" class="heron-3" placeholder="Enter last side"> <br />
+        <button class="btn-heron">Calculate</button>
+        <div class="output-heron"></div>
+        <div class="descript">When the sides of a triangle are given as a, b, and c,
+            Area of a scalene triangle is given by: <br /><br/>
+            √<span style="text-decoration: overline">s(s− a)(s-b)(s-c)</span>
+            <br />
+            <br/>
+            where a, b, and c are the sides and 's' is the semi-perimeter;
+            s = (a + b + c)/2
+        </div>
+    </section>
 
 
 
