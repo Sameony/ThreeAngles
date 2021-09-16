@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <title>Area</title>
     <link rel="stylesheet" href="/src/styles.css">
 </head>
+
 <body>
     <nav class="ourNav">
 
@@ -22,7 +24,7 @@
             </div>
         </div>
 
-        
+
 
 
     </nav>
@@ -32,15 +34,25 @@
         you can find the area with a different specific formula?
     </div>
     <h2>Equilateral Triangle</h2>
-    <input class="equilat" placeholder="Enter a side:"/>
+    <input class="equilat" placeholder="Enter a side:" />
+    <button class="btn-output-equi">Calculate</button>
     <div class="output-equilat"></div>
+    <div class="descript">Area of Equilateral Triangle can be calculated
+        with the formula (√3)/4 × side<sup>2</sup>
+    </div>
 
 
     <h2>Isoceles Traingle</h2>
     <input type="text" placeholder="Enter a side:">
     <input type="text" placeholder="Enter length of base:">
+    <button class="btn-output-iso">Calculate</button>
     <div class="output-isoceles"></div>
 
+    <div class="descript">When an equal side and the base is given.
+        Area of an isosceles triangle =
+        1/4 × b√<span style="text-decoration: overline">4a<sup>2</sup>-b<sup>2</sup></span>
+
+        where 'b' is the base and 'a' is the measure of equal side.</div>
 
     <div class="Babble">
         Also, In case you don't know what kind of triangle it is,
@@ -48,7 +60,23 @@
         We can find the area with the help of sides only!
     </div>
     <h2>Heron's Formula</h2>
+    <input type="text" class="heron" placeholder="Enter first side">
+    <input type="text" class="heron" placeholder="Enter second side">
+    <input type="text" class="heron" placeholder="Enter last side">
+    <button class="btn-output-heron">Calculate</button>
+    <div class="output-heron"></div>
+    <div class="descript">When the sides of a triangle are given as a, b, and c.
+        (Heron's formula)
+
+        Area of a scalene triangle =
+        √<span style="text-decoration: overline">s(s− a)(s-b)(s-c)</span>
+        where a, b, and c are the sides and 's' is the semi-perimeter;
+        s = (a + b + c)/2
+    </div>
+
+
 
     <script src="/src/index.js"></script>
 </body>
+
 </html>
