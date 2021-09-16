@@ -1,0 +1,26 @@
+
+.ourNav{
+    text-align: right;
+    color: white;
+    background-color: black;
+    padding: 1rem;
+    border-radius: 8px;
+    justify-content:space-between
+}
+.splitscreen {
+    display:flex;
+}
+.splitscreen .left {
+    flex: 0;
+}
+.splitscreen .right {
+    flex: 1;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navItem{
+    padding: 1rem;
+}
