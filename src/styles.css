@@ -141,10 +141,32 @@ button{
      padding: 1rem;
      border: #FFFFFF 1px solid;
      margin: 1rem;
-     /* background-color: black; */
      
  }
  .outputHereGib{
     color: red;
     font-weight: bolder;
  }
+
+ /* Footer */
+.footer{
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    
+}
+
+.list-item-inline{
+    display: inline;
+    padding: 1rem;
+}
+
+.footer ul{
+    padding-inline-start: 0px;
+    color:white;
+}
+
+.footer-header{
+    font-size: x-large;
+    font-weight: bold;
+}
