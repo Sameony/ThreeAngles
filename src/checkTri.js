@@ -29,3 +29,23 @@ btn_chk_side.addEventListener("click", function calcSide() {
     }
 
 })
+
+btn_ang_side.addEventListener("click", function calcang() {
+    if (a1.value === "" && a2.value === "" && a3.value === "")
+        op_ang.innerText = ("What are we supposed to find with this excessive information?")
+    else if (a1.value === "" || a2.value === "" || a3.value === "")
+        op_ang.innerText = "You may have missed an angle or two...";
+    else if (isNaN(a1.value) || isNaN(a2.value) || isNaN(a3.value))
+        op_ang.innerText = "Please enter valid numerical inputs."
+    else {
+        var a = parseInt(a1.value);
+        var b = parseInt(a2.value);
+        var c = parseInt(a3.value);
+        
+        if(a+b+c!=180)
+            op_ang.innerText = "You cannot make a triangle with these Angles";
+        else
+            op_ang.innerText = ("You can make a triangle out of those Angles!!");
+    }
+
+})
