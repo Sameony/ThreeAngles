@@ -10,6 +10,30 @@ const a3 = document.querySelector(".side-ang-3");
 const btn_ang_side = document.querySelector(".btn-ang-sides");
 const op_ang = document.querySelector(".output-ang-sides");
 
+const h1 = document.querySelector(".height");
+const b1 = document.querySelector(".base");
+const btn_hypo = document.querySelector(".btn-get-hypo");
+const output_hypo = document.querySelector(".output-hypo");
+
+btn_hypo.addEventListener("click", function getHypo(){
+    var height = h1.value;
+    var base = b1.value;
+    if (h1.value === "" && b1.value === "")
+        output_hypo.innerText = ("What are we supposed to find with this excessive information?")
+    else if (base === "" || height === "")
+        output_hypo.innerText = "You may have missed a side or two...";
+    else if (isNaN(h1.value) || isNaN(b1.value))
+        output_hypo.innerText = "Please enter valid numerical inputs."
+    else {
+        height=height*height;
+        base=base*base;
+
+        var res = Math.sqrt(height+base);
+        
+        output_hypo.innerText = ("Length of hypotenuse is : "+res.toFixed(2));
+    }
+})
+
 btn_chk_side.addEventListener("click", function calcSide() {
     if (s1.value === "" && s2.value === "" && s3.value === "")
         op_side.innerText = ("What are we supposed to find with this excessive information?")
