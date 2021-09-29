@@ -137,15 +137,17 @@ button{
  /* Quiz */
  
  .quiz-container{
-     color: white;
+     border-radius: 1rem 0;
      padding: 1rem;
      border: #FFFFFF 1px solid;
      margin: 1rem;
+     background-color: white;
      
  }
  .outputHereGib{
-    color: red;
-    font-weight: bolder;
+    color: rgb(238, 71, 71);
+    font-weight: bold;
+    font-size: larger;
  }
 
  /* Footer */
