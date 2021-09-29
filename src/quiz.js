@@ -22,5 +22,9 @@ btn_submit.addEventListener("click", function clickEventHandler() {
         i++;
         console.log(score);
     }
-    outputHereGib.innerText = ("Your score is : " + score);
+    
+    if(score===0)
+        outputHereGib.innerText = ("Are you even trying? Did you answer all the questions?");
+    else
+        outputHereGib.innerText = ("Your score is : " + score);
 })
